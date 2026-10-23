@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>toolbox — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the toolbox iOS app.">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      max-width: 40rem;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.6;
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+    .updated {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-top: 2.75rem;
+      margin-bottom: 0.75rem;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: #ff3a00;
+      text-underline-offset: 4px;
+    }
+    p { margin: 0.75rem 0; }
+    ul { margin: 0.75rem 0; padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
+    .lead { color: #ccc; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid #222;
+      vertical-align: top;
+    }
+    th { color: #888; font-weight: 500; }
+    td.provider { white-space: nowrap; color: #fff; }
+    .back {
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>toolbox Privacy Policy</h1>
+  <p class="updated">Last updated: October 23, 2026</p>
+
+  <p class="lead">toolbox is an app for cataloging your tools and home items, and, if you choose, lending them to neighbours nearby. This page explains what information toolbox collects, why, and how it is handled. We have tried to write it in plain language rather than legal boilerplate.</p>
+
+  <p>The short version: we collect what is needed to run your catalog and make local lending work, we never share your exact location with other users, we do not sell your data, and you can delete your account and everything tied to it at any time from inside the app.</p>
+
+  <h2>Who operates toolbox</h2>
+  <p>toolbox is built and operated by Enigma Studio Inc., an Ontario, Canada software studio.</p>
+
+  <h2>Information we collect</h2>
+
+  <h3>Account information</h3>
+  <p>When you sign in with Apple or Google (via Supabase Auth, our backend provider), we receive and store your email address and create an account ID for you. We do not see or store your password. Authentication is handled by Apple, Google, and Supabase.</p>
+
+  <h3>Profile information</h3>
+  <p>You can set a display name, an optional @handle, and an optional profile photo (avatar). You control a visibility toggle that determines whether your profile is discoverable to others.</p>
+
+  <h3>Catalog content and photos</h3>
+  <p>The tools and items you catalog, including names, notes, tags, free-text location descriptions (for example "garage shelf"), and any photos you attach, are stored in our backend (Supabase database and file storage) so your catalog syncs across your devices. This content is yours; we store it to provide the app's core function.</p>
+
+  <h3>Location</h3>
+  <p>If you grant location permission, toolbox uses your device's precise location ("when in use" only, never in the background) for two purposes:</p>
+  <ul>
+    <li>To compute an <strong>approximate distance band</strong> (for example "under 1 km") between you and lendable tools near you, so you can discover what is nearby.</li>
+    <li>To let you set a <strong>home base</strong>, a location (which you can enter as a typed address or use your current position) that determines where your own lendable tools appear to others.</li>
+  </ul>
+  <p>See the dedicated <strong>Location privacy</strong> section below for important detail on what is and is not shared.</p>
+
+  <h3>Push notification tokens</h3>
+  <p>If you grant notification permission, we store an Expo push token tied to your account so we can notify you about borrow requests and related lending activity (for example, a return deadline approaching). The token identifies your device for delivery purposes; it does not contain personal content.</p>
+
+  <h3>Analytics and usage data</h3>
+  <p>We use PostHog (a US-based analytics provider) to understand how the app is used. This includes product-usage events, such as screens viewed and actions like "tool added," "borrow requested," or "household joined," along with standard device and app metadata (for example OS version, app version). Analytics events do <strong>not</strong> include coordinates, street addresses, or the free-text content you enter (tool names, notes, locations, and so on). Events are tied to your account ID so we can understand usage patterns, and that link is cleared when you sign out.</p>
+
+  <h2>How we use this information</h2>
+  <p>We use the information above to:</p>
+  <ul>
+    <li>Create and maintain your account and catalog, synced across your devices.</li>
+    <li>Power the lending feature: showing nearby lendable tools by distance band, handling borrow requests, and sending reminders.</li>
+    <li>Let you share a household catalog or connect with friends, if you choose to use those features.</li>
+    <li>Send push notifications about lending activity you are involved in.</li>
+    <li>Understand how the app is used and fix problems, via aggregated analytics.</li>
+    <li>Maintain the security and integrity of the service (for example, enforcing access rules at the database level).</li>
+  </ul>
+  <p>We do not use your information for advertising, and we do not build advertising profiles.</p>
+
+  <h2>Location privacy</h2>
+  <p>Location is central to how lending works, so we want to be explicit about it:</p>
+  <ul>
+    <li><strong>Your exact coordinates are never shared with other users.</strong> When someone else sees your lendable tools, they see only a coarse distance band (for example "under 1 km away"), never a pin, address, or precise distance.</li>
+    <li>Precise location is used only to compute that distance band and to let you set your home base; it is enforced server-side, so the app's backend, not just the screen you see, withholds exact coordinates from other users' queries.</li>
+    <li>Exact location is only ever revealed once <strong>you</strong> explicitly agree to a specific lend and choose a pickup spot for that transaction. That pickup location is shared solely with the other party to that specific borrow, and only after you have agreed to it.</li>
+    <li>If you add your home address as free text when setting a home base, it is geocoded (converted to coordinates) to compute distance bands; the text you typed is not shown to other users.</li>
+    <li>Location permission is "when in use." toolbox does not track your location in the background or when the app is closed.</li>
+    <li>You can deny or revoke location permission at any time (see <strong>Your choices and rights</strong> below). Without it, you can still use the catalog features; you just will not see or be discoverable in nearby lending.</li>
+  </ul>
+
+  <h2>How information is shared</h2>
+  <ul>
+    <li><strong>We do not sell your personal information, and we never will.</strong></li>
+    <li>We do not share your data with third parties for their own marketing or advertising purposes.</li>
+    <li>Other toolbox users can see what you choose to make visible: your profile (per your visibility setting), your lendable tools' distance band (never exact location), and anything you share directly through a household, friend connection, or an agreed borrow.</li>
+    <li>We share information with the service providers listed below, solely so they can provide the service to us, not for their own independent use.</li>
+    <li>We may disclose information if required by law, to protect the rights and safety of toolbox or its users, or in connection with a legitimate legal request.</li>
+  </ul>
+
+  <h2>Third-party processors</h2>
+  <p>toolbox relies on the following providers to operate. Each processes data on our behalf, under its own privacy and security practices:</p>
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="provider">Supabase</td><td>Backend: authentication, database (catalog, profiles, lending records), and file storage (photos, avatars). This is where your account's data is hosted.</td></tr>
+      <tr><td class="provider">PostHog</td><td>Product analytics (usage events and device metadata), hosted on PostHog's US cloud.</td></tr>
+      <tr><td class="provider">Apple</td><td>Sign in with Apple, when you choose that sign-in method.</td></tr>
+      <tr><td class="provider">Google</td><td>Google Sign-In, when you choose that sign-in method.</td></tr>
+      <tr><td class="provider">Expo</td><td>Delivery of push notifications to your device via the Expo push service.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Data retention</h2>
+  <p>We retain your account and catalog data for as long as your account is active, so the app can function and sync across your devices. If you delete your account (see below), your data is permanently erased rather than retained. Aggregated or anonymized analytics that can no longer be tied to you may be retained for product-improvement purposes.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Delete your account.</strong> In the app, go to <strong>Profile &rarr; Delete account</strong>. This permanently erases your account and everything tied to it: your tools, photos, lending history, friend connections, household membership, and profile. This action cannot be undone.</li>
+    <li><strong>Control your profile visibility.</strong> Use the visibility toggle in your profile settings to control whether you are discoverable to others.</li>
+    <li><strong>Revoke permissions.</strong> You can turn off Location or Notifications at any time in iOS <strong>Settings &rarr; toolbox</strong>. Revoking location permission stops distance-band lending features from working for you but does not affect your private catalog. Revoking notifications stops push alerts about borrow activity.</li>
+    <li><strong>Access or correct your data.</strong> Most profile and catalog information can be viewed and edited directly in the app. For anything else, contact us using the details below.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>toolbox is not directed at, and is not intended for use by, children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+
+  <h2>International users and data storage</h2>
+  <p>toolbox is operated from Canada, and the services we rely on (Supabase, PostHog) store and process data on infrastructure located in the United States. By using toolbox, you understand that your information will be transferred to and processed in the United States, which may have different data protection laws than your country of residence.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app changes. If we make material changes, we will update the "Last updated" date above and, where appropriate, notify you in the app. Continued use of toolbox after a change means you accept the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data? Contact <a href="mailto:david@enigmastudio.app">david@enigmastudio.app</a>.</p>
+
+  <p class="back"><a href="/">&larr; Enigma Studio</a> &nbsp;·&nbsp; <a href="/toolbox/support/">toolbox support</a></p>
+  <p class="footer">&copy; 2026 Enigma Studio Inc.</p>
+</body>
+</html>
